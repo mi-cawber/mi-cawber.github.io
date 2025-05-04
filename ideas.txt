@@ -1,22 +1,24 @@
 Ideas:
-- add page for places I would like to travel
-- add pages for things I like/things I dislike
-- edit homepage (even more)
-- add titles for pages
-- add page for quotations (essentially dump quotations document)
-- add page for book list
+1. add page for places I would like to travel
+2. add pages for things I like/things I dislike
+3. make homepage more of a proper landing page
+4. add titles for pages
 
 
+
+
+Quotations:
+1. get the page setup
 
 Music:
-- correctly align photos
-- Add music samples for the composers
+1. correctly align photos
+2. Add music samples for the composers
 
 Philosophers:
--add cover photo
+1. add philosophers
 
 Books:
-- actually add something
+1. add books
 
 Thoughts:
-- update
+1. update

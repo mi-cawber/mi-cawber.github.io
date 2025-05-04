@@ -54,12 +54,24 @@
 }
 
 /*for books.html*/
-#books_header {
+#book_header {
     font-family: Garamond;
     color: ivory;
 }
 
-#books_body {
+#books_subhead {
+    font-family: Garamond;
+    font-size: 30px;
+    font-weight: bold;
+    color: ivory;
+}
+
+#book_body {
     font-family: Garamond;
     color: ivory;
+}
+
+#book_cover {
+    width: 400x;
+    height:  500px;
 }
