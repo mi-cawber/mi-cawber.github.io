@@ -3,6 +3,7 @@ Ideas:
 2. add pages for things I like/things I dislike
 3. make homepage more of a proper landing page
 4. add titles for pages
+5. Add something random and interactive on the homepage
 
 
 
