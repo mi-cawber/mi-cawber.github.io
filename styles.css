@@ -1,0 +1,55 @@
+
+/*main classes*/
+.header {
+    text-align: center;
+    font-size: 40px;
+    color: bisque;
+}
+ 
+.body {
+    text-align: left;
+    color:azure;
+}
+
+.links {
+    color: red;
+}
+
+.photo_headers {
+    width:750px;
+    height: 453px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*for music.html*/
+.composer_portraits {
+    width: 202px;
+    height: 249px;
+}
+
+#music_header {
+    font-family: 'Lucida Handwriting', cursive;
+    color: ivory;
+}
+
+#music_body {
+    color:ivory;
+}
+
+#music_links {
+    color:aqua;
+}
+
+/*for philosophy.html*/
+#philosophy_header {
+    font-family: 'Georgia';
+    color:black;
+}
+
+#philosophy_body {
+    font-family: 'Georgia';
+    color: black;
+}
+/*for books.html*/
