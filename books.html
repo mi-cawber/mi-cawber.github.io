@@ -1,19 +1,76 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
 <head>
     <title>micaeber's book</title>
     <link rel='stylesheet' href='styles.css'>
+    <style>
+        /* Add some basic table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color:navy;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            color:azure
+        }
+        th {
+            
+        }
+    </style>
 </head>
-    <body style="background-color: green">
-        <h1 style="text-align: center;">Books</h1>
-        <center><img src="photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px"><center>
-        <p style="text-align: center;"><i>Put quote here</i></p>
-        <p style="text-align: left;">
-            I was not one of those kids that always had their nose in a book. As a matter of fact,
-            I hardly ever had my nose anywhere near a book. I was too busy playing video games
-            or something like that
-            <br><br>
-            I started reading a bit later, and began with fantasy fiction.
-        </p>
-       <h2 style="text-align: left;">Here are some of my favorite books: </h2>
-    </body>
+<body style='background-color: olive'>
+    <h1 style="text-align: center;">Books</h1>
+    <center><img src="photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px"></center>
+    <p style="text-align: center;"><i>Put quote here</i></p>
+    <p style="text-align: left;">
+        I was not one of those kids that always had their nose in a book. As a matter of fact,
+        I hardly ever had my nose anywhere near a book. I was too busy playing video games
+        or something like that
+        <br><br>
+        I started reading a bit later, and began with fantasy fiction.
+    </p>
+    <h2 class='header' id='books_header' style="text-align: left;">Here are some of my favorite books: </h2>
+
+    <h3 class='header' id='books_header' style='text-align: left;'>I have kept track of many of the books I have read</h3>
+    
+    <!-- Add this div to hold your table -->
+    <div id="tableContainer"></div>
+    
+    <!--This script loads the csv and makes a table from it-->
+    <script>
+        // Load CSV file and create table when page loads
+        window.onload = function() {
+            // Fetch the CSV file
+            fetch('book_list.csv')
+                .then(response => response.text())
+                .then(data => {
+                    // Split into rows and build table HTML
+                    let html = '<table>';
+                    
+                    // Process each row
+                    data.split('\n').forEach((row, i) => {
+                        html += '<tr>';
+                        // Process each cell
+                        row.split(',').forEach(cell => {
+                            html += i === 0 ? `<th>${cell}</th>` : `<td>${cell}</td>`;
+                        });
+                        html += '</tr>';
+                    });
+                    
+                    html += '</table>';
+                    
+                    // Add table to page
+                    document.getElementById('tableContainer').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('tableContainer').innerHTML = 
+                        '<p>Error loading book data. Please check that your CSV file exists.</p>';
+                });
+        };
+    </script>
+</body>
+</html>

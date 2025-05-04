@@ -52,4 +52,8 @@
     font-family: 'Georgia';
     color: black;
 }
+
 /*for books.html*/
+#books_header {
+    color: ivory;
+}
