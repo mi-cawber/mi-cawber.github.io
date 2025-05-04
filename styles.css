@@ -55,5 +55,11 @@
 
 /*for books.html*/
 #books_header {
+    font-family: Garamond;
+    color: ivory;
+}
+
+#books_body {
+    font-family: Garamond;
     color: ivory;
 }
