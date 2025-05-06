@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html>
 <head>
     <title>micaeber's quotations</title>
-    <link rel='stylesheet' href='styles.css'>
+    <!--import mammoth.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
 </head>
-
-<body>
+<body style='background-color:lemonchiffon;'>
+    <center><img class='photo_headers' src='photos/book_pile.jpeg'><center>
     
+    <!-- This div will contain converted document -->
+    <div id="output">Loading document...</div>
+
+    <script>
+        // URL to word doc
+        var docxUrl = "documents/quotations.docx";
+        
+        // Get the output div where we'll display the document
+        var outputDiv = document.getElementById("output");
+        
+        // Fetch the document from the URL
+        fetch(docxUrl)
+            .then(function(response) {
+                return response.arrayBuffer();
+            })
+            .then(function(arrayBuffer) {
+                // Convert the document to HTML
+                return mammoth.convertToHtml({arrayBuffer: arrayBuffer});
+            })
+            .then(function(result) {
+                // Display the HTML
+                outputDiv.innerHTML = result.value;
+            })
+            .catch(function(error) {
+                // Show any errors
+                outputDiv.innerHTML = "Error loading document: " + error.message;
+            });
+    </script>
 </body>
+</html>

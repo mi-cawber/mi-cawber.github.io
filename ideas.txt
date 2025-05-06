@@ -1,10 +1,5 @@
 Ideas:
-1. add page for places I would like to travel
-2. add pages for things I like/things I dislike
-3. make homepage more of a proper landing page
-4. add titles for pages
-5. Add something random and interactive on the homepage
-
+1. add "Home" links onto other pages
 
 
 
@@ -19,7 +14,7 @@ Philosophers:
 1. add philosophers
 
 Books:
-1. add books
+1.add books
 
 Thoughts:
 1. update
