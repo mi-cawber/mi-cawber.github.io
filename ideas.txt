@@ -1,5 +1,6 @@
 Ideas:
 1. add "Home" links onto other pages
+2. work on folder organization
 
 
 
@@ -8,7 +9,11 @@ Quotations:
 
 Music:
 1. correctly align photos
-2. Add music samples for the composers
+2. Instead of listing as "favorites," list them as
+    "composers that have influenced me." I only listen
+    to a few composers, but that doesn't mean I haven't
+    been influenced by others.
+
 
 Philosophers:
 1. add philosophers
