@@ -1,11 +1,8 @@
 Ideas:
-1. add "Home" links onto other pages
-2. work on folder organization
+1. figure out why the folder organization didn't work
 
 
 
-Quotations:
-1. get the page setup
 
 Music:
 1. correctly align photos
@@ -19,7 +16,7 @@ Philosophers:
 1. add philosophers
 
 Books:
-1.add books
+1. Format better
 
 Thoughts:
 1. update
