@@ -4,19 +4,35 @@
     <title>micaeber's quotations</title>
     <!--import mammoth.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <link rel='stylesheet' href='styles.css'>
 </head>
+
 <body style='background-color:lemonchiffon;'>
+    <!--header stuff-->
+    <a href='index.html' class='links' style='font-size: 30px;'>Home</a>
+    <h1 class='header' id='philosophy_header'>Quotations</h1>
     <center><img class='photo_headers' src='photos/book_pile.jpeg'><center>
+
+    
+    <!--body material-->
+    <p id='philosophy_body'>
+        <i>
+        Long ago I got into the habit of writing down passages from books that I found
+        particularly striking or memorable. I am happy to say that I have amassed a good
+        collection of such quotes. as of 05/06/2025, there are 441.
+        <i>
+    </p>
+    
+    <h2 class='header'id='philosophy_header'>Here they are</h2>
     
     <!-- This div will contain converted document -->
-    <div id="output">Loading document...</div>
-
+    <div class='quotations' id='output'>Loading document...</div>
     <script>
         // URL to word doc
-        var docxUrl = "documents/quotations.docx";
+        var docxUrl = 'documents/quotations.docx';
         
         // Get the output div where we'll display the document
-        var outputDiv = document.getElementById("output");
+        var outputDiv = document.getElementById('output');
         
         // Fetch the document from the URL
         fetch(docxUrl)
@@ -33,7 +49,7 @@
             })
             .catch(function(error) {
                 // Show any errors
-                outputDiv.innerHTML = "Error loading document: " + error.message;
+                outputDiv.innerHTML = 'Error loading document: ' + error.message;
             });
     </script>
 </body>

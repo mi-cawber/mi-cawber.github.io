@@ -75,3 +75,16 @@
     width: 400x;
     height:  500px;
 }
+
+/*for quotations.html*/
+#quotations_header {
+
+
+}
+
+.quotations {
+    font-family: Georgia;
+    text-align: left;
+    line-height: 40px; /*adds what appears as double spacing between lines*/
+    margin: 20px;
+}
