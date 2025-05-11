@@ -1,8 +1,6 @@
 Ideas:
 1. figure out why the folder organization didn't work
-
-
-
+2. Add a little thing that tells when the website was last updated
 
 Music:
 1. correctly align photos
@@ -17,6 +15,7 @@ Philosophers:
 
 Books:
 1. Format better
+2. add book descriptions
 
 Thoughts:
 1. update

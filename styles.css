@@ -69,6 +69,7 @@
 #book_body {
     font-family: Garamond;
     color: ivory;
+    text-align: left;
 }
 
 #book_cover {
