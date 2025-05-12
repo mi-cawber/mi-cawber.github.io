@@ -1,6 +1,8 @@
 Ideas:
 1. figure out why the folder organization didn't work
 
+Index:
+1. I think maybe the entire page could be re-done, focus on presenting the other pages
 Music:
 1. correctly align photos
 2. Instead of listing as "favorites," list them as
