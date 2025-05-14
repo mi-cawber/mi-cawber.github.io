@@ -9,6 +9,7 @@ Index:
 
 Music:
 1. correctly align photos
+    -try surrounding eras with divs
 2. Instead of listing as "favorites," list them as
     "composers that have influenced me." I only listen
     to a few composers, but that doesn't mean I haven't
@@ -20,4 +21,5 @@ Music:
     -Franz Liszt
     -Wolfang Amadeus Mozart
     -Franz Schubert
+    -Richard Wagner
 4. I want a page for pianists...
