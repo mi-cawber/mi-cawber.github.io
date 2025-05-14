@@ -89,3 +89,16 @@
     line-height: 40px; /*adds what appears as double spacing between lines*/
     margin: 20px;
 }
+
+/*for guiding_principles.html*/
+#principle {
+    text-align: center;
+    font-size: 30px;
+    color: azure;
+    font-weight: bold;
+}
+
+#p_body {
+    text-align: center;
+    color: azure;
+}
