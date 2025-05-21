@@ -5,6 +5,13 @@
   gap: 20px;               /* Creates space between image and text */
 }
 
+.centered_container {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
 .text_content {
   flex: 1;                 /* Makes text area fill remaining space */
 }
@@ -30,7 +37,7 @@
 }
 
 .links {
-    color: red;
+    color:rgb(25, 212, 40);
 }
 
 .photo_headers {
