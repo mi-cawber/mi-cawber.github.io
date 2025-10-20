@@ -17,7 +17,7 @@
 }
 
 #gif_background {
-    background-image: url(gifs/pink_clouds.gif);
+    background-image: url(gifs/meteor.gif);
     background-size: 100% 100%;
     background-repeat: no-repeat; /*fills, no fracturing*/
 }
@@ -37,7 +37,12 @@
 }
 
 .links {
-    color:rgb(205, 86, 223);
+
+    /*magenta*/
+    /*color:rgb(205, 86, 223);*/
+
+    /*green*/
+    color: rgb(60, 179, 113);
 }
 
 .photo_headers {
