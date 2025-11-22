@@ -1,7 +1,6 @@
 /*containers stuff*/
-.flex_container {
+.container {
   display: flex;           /* Activates flexbox layout */
-  justify-content: center;     /* Vertically centers the children */
   gap: 20px;               /* Creates space between image and text */
 }
 
