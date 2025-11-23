@@ -1,7 +1,8 @@
 /*containers stuff*/
 .container {
   display: flex;           /* Activates flexbox layout */
-  gap: 20px;               /* Creates space between image and text */
+  flex-direction: row;
+  gap: 40px;               /* Creates space between image and text */
 }
 
 .centered_container {
@@ -61,45 +62,10 @@
     height: 249px;
 }
 
-/*for philosophy.html*/
-#philosophy_header {
-    font-family: 'Georgia';
-    color:black;
-}
-
-#philosophy_body {
-    font-family: 'Georgia';
-    color: black;
-}
-
 /*for books.html*/
-#book_header {
-    font-family: Garamond;
-    color: ivory;
-}
-
-#books_subhead {
-    font-family: Garamond;
-    font-size: 30px;
-    font-weight: bold;
-    color: ivory;
-}
-
-#book_body {
-    font-family: Garamond;
-    color: ivory;
-    text-align: left;
-}
-
-#book_cover {
+.book_cover {
     width: 400x;
     height:  500px;
-}
-
-/*for quotations.html*/
-#quotations_header {
-
-
 }
 
 .quotations {
@@ -107,18 +73,4 @@
     text-align: left;
     line-height: 40px; /*adds what appears as double spacing between lines*/
     margin: 20px;
-}
-
-/*for guiding_principles.html*/
-#principle {
-    text-align: center;
-    font-size: 30px;
-    color: azure;
-    font-weight: bold;
-}
-
-#p_body {
-    text-align: center;
-    color: azure;
-    font-family: Garamond;
 }
