@@ -61,21 +61,6 @@
     height: 249px;
 }
 
-#music_header {
-    font-family: 'Lucida Handwriting', cursive;
-    font-size: 30px;
-    color: ivory;
-}
-
-#music_body {
-    color:ivory;
-    font-size: 18px;
-}
-
-#music_links {
-    color:moccasin;
-}
-
 /*for philosophy.html*/
 #philosophy_header {
     font-family: 'Georgia';
