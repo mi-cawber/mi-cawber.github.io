@@ -3,6 +3,7 @@
   display: flex;           /* Activates flexbox layout */
   flex-direction: row;
   gap: 40px;               /* Creates space between image and text */
+  padding: 20px;
 }
 
 .centered_container {
