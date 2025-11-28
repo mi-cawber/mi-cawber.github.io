@@ -14,7 +14,9 @@
 }
 
 .text_content {
-  flex: 1;                 /* Makes text area fill remaining space */
+    max-width: 960px; /* Or any other desired maximum width in pixels, em, or rem */
+    padding: 20px; /* Optional: adds some padding around the content */
+    flex: 1;                 /* Makes text area fill remaining space */
 }
 
 #gif_background {
