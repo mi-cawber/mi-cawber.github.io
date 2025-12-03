@@ -1,4 +1,4 @@
-/*containers stuff*/
+/* containers stuff */
 .container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: row;
@@ -7,11 +7,12 @@
 }
 
 .centered_container {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+    display: flex;           /* Activates flexbox layout */
+    flex-direction: row;
+    margin-right: 200px;
+    margin-left: 200px;
 }
+
 
 .text_content {
     max-width: 960px; /* Or any other desired maximum width in pixels, em, or rem */
@@ -19,14 +20,14 @@
     flex: 1;                 /* Makes text area fill remaining space */
 }
 
-#gif_background {
-    background-image: url(gifs/snow.gif);
+#banner {
+    background-image: url('photos/snow_lake.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat; /*fills, no fracturing*/
 }
 
 
-/*main classes*/
+/* main classes */
 .header {
     text-align: center;
     font-size: 40px;
@@ -52,7 +53,7 @@
 }
 
 .photo_headers {
-    width:750px;
+    width: 750px;
     height: 453px;
     display: block;
     margin-left: auto;
@@ -79,7 +80,7 @@
 }
 
 
-/* For study.html*/
+/* For study.html */
 
 /*
 Source - https://stackoverflow.com/a/33964257
