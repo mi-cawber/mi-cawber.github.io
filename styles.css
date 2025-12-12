@@ -72,6 +72,14 @@
     height:  500px;
 }
 
+#output {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    line-height: 40px; /*adds what appears as double spacing between lines*/
+    margin: 20px;
+
+}
 .quotations {
     font-family: Georgia;
     text-align: left;

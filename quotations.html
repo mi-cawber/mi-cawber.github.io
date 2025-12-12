@@ -15,18 +15,15 @@
 
     
     <!--body material-->
-    <p id='philosophy_body'>
+    <p class='body' style='text-align: center;'>
         <i>
-        Long ago I got into the habit of writing down passages from books that I found
-        particularly striking or memorable. I am happy to say that I have amassed a good
-        collection of such quotes. as of 09/26/2025, there are 668.
+        Some time ago I got into the habit of writing down passages from books that I found particularly striking or memorable. I am able to import a good chunk of them here.
         <i>
     </p>
     
-    <h2 class='header'id='philosophy_header'>Here they are</h2>
-    
+    <div class='container'>
     <!-- This div will contain converted document -->
-    <div class='quotations' id='output'>Loading document...</div>
+    <div id='output'>Loading document...</div>
     <script>
         // URL to word doc
         var docxUrl = 'documents/quotations.docx';
@@ -52,5 +49,6 @@
                 outputDiv.innerHTML = 'Error loading document: ' + error.message;
             });
     </script>
+    </div>
 </body>
 </html>
