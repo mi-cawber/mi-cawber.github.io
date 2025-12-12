@@ -15,11 +15,9 @@
 
 .centered_container {
     display: flex;           /* Activates flexbox layout */
-    flex-direction: row;
-    margin-right: 200px;
-    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .text_content {
     max-width: 960px; /* Or any other desired maximum width in pixels, em, or rem */
