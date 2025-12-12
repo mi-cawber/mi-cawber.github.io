@@ -6,6 +6,13 @@
   padding: 20px;
 }
 
+.col_container {
+  display: flex;           /* Activates flexbox layout */
+  flex-direction: column;
+  gap: 40px;               /* Creates space between image and text */
+  padding: 20px;
+}
+
 .centered_container {
     display: flex;           /* Activates flexbox layout */
     flex-direction: row;
