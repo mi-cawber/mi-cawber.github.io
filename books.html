@@ -29,7 +29,7 @@
     <a href='index.html' class='links' style='font-size: 30px;'>&lt;&lt; Home</a>
 
     <h1 class='header' class='header'style="text-align: center;">Books</h1>
-        <center><img src="photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px"></center>
+        <center><img src="assets/photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px"></center>
         <p class='body' style="text-align: center;"><i>Literature--whether fiction or non-fiction, seems
             to embody and embrace that elusive element which defines humankind.
         </i></p>
@@ -45,7 +45,7 @@
         <div class='container' style='border-bottom: 3px solid white'>
             
             <div>
-            <img src='photos/david_copperfield.jpg' class='book_cover'>
+            <img src='assets/photos/david_copperfield.jpg' class='book_cover'>
             </div>
 
             <div>
@@ -59,7 +59,7 @@
         <!-- The Catcher in the Rye-->
         <div class='container' style='border-bottom: 3px solid white'>
             <div>
-                <img src='photos/catcher.jpg' class='book_cover'>
+                <img src='assets/photos/catcher.jpg' class='book_cover'>
             </div>
             
             <div>
@@ -73,7 +73,7 @@
         <!-- Crime and Punishment-->
         <div class='container' style='border-bottom: 3px solid white'>
             <div>
-                <img src='photos/crime_punishment.jpg' class='book_cover'>
+                <img src='assets/photos/crime_punishment.jpg' class='book_cover'>
             </div>
 
             <div>
@@ -87,11 +87,11 @@
         <!-- Beyond Good & Evil-->
         <div class='container' style='border-bottom: 3px solid white'>
             <div>
-                <img src='photos/good_evil.jpg' class='book_cover'>
+                <img src='assets/photos/good_evil.jpg' class='book_cover'>
             </div>
 
             <div>
-            <p class='body'><i>Beyond Good & Evil</i></p>
+            <p class='header'><i>Beyond Good & Evil</i></p>
             <p class='body'>Author: Friedrich Nieztsche</p>
             <p class='body'>Published: 1886</p>
             <p class='body'>This was my first proper philosophical text. I don't really know what to say other than this book changed my life. I really don't know what to say other than that. It made me really love and appreciate life.</p>
@@ -101,7 +101,7 @@
         <!-- Either/Or -->
         <div class='container' style='border-bottom: 3px solid white'>
             <div>
-                <img src='photos/either_or.jpg' class='book_cover'>
+                <img src='assets/photos/either_or.jpg' class='book_cover'>
             </div>
 
             <div>
@@ -124,7 +124,7 @@
             // Load CSV file and create table when page loads
             window.onload = function() {
                 // Fetch the CSV file
-                fetch('documents/book_list.csv')
+                fetch('assets/documents/book_list.csv')
                     .then(response => response.text())
                     .then(data => {
                         // Split into rows and build table HTML
