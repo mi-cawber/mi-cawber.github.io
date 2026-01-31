@@ -1,152 +1,143 @@
 <html lang = 'en'>
-    <head>
+<head>
         <title>Study Challenge</title>
         <link rel='stylesheet' href='styles.css'>
-    </head>
+</head>
+<body style='background-color: black;'>
+<main>
 
-    <body style='background-color: black;'>
-        <main>
+    <!-- Home link -->
+    <a href='index.html' class='links' style='font-size: 30px;'>&lt;&lt; Home</a>
 
-        <!-- Home link -->
-        <a href='index.html' class='links' style='font-size: 30px;'>&lt;&lt; Home</a>
+        <!-- Header chunk -->
+        <div class='container'>
 
-            <!-- Header chunk -->
-            <div class='container'>
-
-                <div>
-                    <!-- VIDEO SLOT -->
-
+            <div>
+            <!-- VIDEO SLOT -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o22Hh5l6aoI?si=xLRLGfmeLTvowOSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
 
-                </div>
-                
+            <!-- Text -->
+            <div>
+                <h1 class='header'>Study Challenge</h1>
+                <p class='body'>Recently I challenged myself to study for one hour everyday for 100 days. I started on 11/18/2025 and I will stop on 02/25/2026 (or maybe I won't).<br><br> I got this idea because I have been wanting to learn more about data analysis, security, and C; I got some books on these topics, and I figured I would make a fun challenge out of going through them. <br><br> I stream the study sessions on <a href='https://www.twitch.tv/venv_io' class='links'>Twitch</a> or <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> and upload the recordings to <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a>. </p>
+            </div>
+        </div>
 
-                <!-- Text -->
-                <div>
-                    <h1 class='header'>Study Challenge</h1>
-                    <p class='body'>Recently I challenged myself to study for one hour everyday for 100 days. I started on 11/18/2025 and I will stop on 02/25/2026 (or maybe I won't).<br><br> I got this idea because I have been wanting to learn more about data analysis, security, and C; I got some books on these topics, and I figured I would make a fun challenge out of going through them. <br><br> I stream the study sessions on <a href='https://www.twitch.tv/venv_io' class='links'>Twitch</a> or <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> and upload the recordings to <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a>. </p>
-                </div>
+        <h1 class='header' style='text-align: left'>Books:</h1>
+        <!-- Python book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/pybook.jpg' class='composer_portraits'><br>
+                <progress max='100' value='100'></progress><br/>
             </div>
 
-            <h1 class='header' style='text-align: left'>Books:</h1>
+            <div class='text_content'>
+            <p class='body'>The book gives a sweeping overview of pandas and its core functionality. Wes begins by reviewing some core Python tools like functions, common data types, list comprehensions, lambdas, try-except blocks, etc. This section of the book can safely be skipped by users familiar with Python. Next, we are introduced to Numpy arrays and shown how they act as the building blocks for both DataFrames and Series, the primary data types for pandas. Around this time, Wes gives a memorable definition of the purpose of Numpy and pandas, stating that they "prioritize data processing without using for loops." After this, the meat of the book is presented, and readers are shown how to load, store, manipulate, and analyze data using pandas. The last few chapters discuss time series data, visualizations with matplotlib, and modeling techniques.<br> I approached this book with about a year's worth of experience with pandas, and this book showed me  that I had only scratched the surface of the functionality offered by this library.</p>
+            </div>
+        </div><br>
 
-            <!-- Python book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/pybook.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='100'></progress><br/>
-                </div>
+        <!-- C book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/cbook.jpg' class='composer_portraits'><br>
+                <progress max='100' value='100'></progress><br/>
+            </div>
 
+            <div>
+                <p class='body'>The first half of this book was really fun to read. I have had previous exposure to statically typed languages from Java, but I never learned the language deeply, and have spent most of my time with Python. With this being said, I learned about particular things I had taken for granted, being someone that uses Python a lot. For example:<br></p>
 
+                    <p class='body', style='color: yellow;'>1. Interactive Shells</p>
+                        <p class='body'>I need to use pandas at work quite a bit, and doing so in the interactive shell has made my life a lot easier. It was very interesting working with a language that needed to be compiled after each change in order to run.<br></p>
 
-                <div class='text_content'>
-                <p class='body'>The book gives a sweeping overview of pandas and its core functionality. Wes begins by reviewing some core Python tools like functions, common data types, list comprehensions, lambdas, try-except blocks, etc. This section of the book can safely be skipped by users familiar with Python. Next, we are introduced to Numpy arrays and shown how they act as the building blocks for both DataFrames and Series, the primary data types for pandas. Around this time, Wes gives a memorable definition of the purpose of Numpy and pandas, stating that they "prioritize data processing without using for loops." After this, the meat of the book is presented, and readers are shown how to load, store, manipulate, and analyze data using pandas. The last few chapters discuss time series data, visualizations with matplotlib, and modeling techniques.<br> I approached this book with about a year's worth of experience with pandas, and this book showed me  that I had only scratched the surface of the functionality offered by this library.</p>
-                </div>
-            </div><br>
+                    <p class='body', style='color: yellow;'>2. Extensive Documentation</p>
+                        <p class='body'>Python and its popular libraries are documented very thoroughly. Other tools I use frequently like zsh and neovim are also very well documented. I was surprised by how C is maintained, and honestly I still don't understand how to find proper documentation. I found <a href='https://en.cppreference.com/index.html' class='links'>this website</a>, but it doesn't seem to be official. Seeing that I have only been in the C ecosystem for a few weeks, I realize that this answer is ignorant, but I guess that is kind of the point. I was simply surprised to see the lack of a unified documentation.<br>
+                        With this being said, there are things I enjoy about C; just as I had taken some things for granted using Python, I also learned what I was <i>missing out on</i> by using Python.<br></p>
 
-            <!-- C book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/cbook.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='100'></progress><br/>
+                    <p class='body', style='color: yellow;'>1. Small Language</p>
+                        <p class='body'>It is amazing to see how great a small language can be, and makes me wonder if some other languages, like Python, aren't loaded down with unnecessary fluff.<br></p>
 
-                </div>
+                    <p class='body', style='color: yellow;'>2. Static Typing</p>
+                        <p class='body'>I like the straightforward and explicit mannerisms that come with a statically typed language.</p>
 
-                <div>
-                    <p class='body'>The first half of this book was really fun to read. I have had previous exposure to statically typed languages from Java, but I never learned the language deeply, and have spent most of my time with Python. With this being said, I learned about particular things I had taken for granted, being someone that uses Python a lot. For example:<br></p>
+                    <p class='body', style='color: yellow;'>3. Memory Management</p>
+                    <p class='body'>I spent most of my time messing around with memory allocation and pointers while learning C. It was so much fun, and I couldn't believe that such intimacy with hardware was actually <i>impossible</i> in Python.<br>
+                    Concerning the structure and readability of the book itself, I think it is well understood that the material reads more like a reference manual than a book. I don't mean this in a negative way, it's just fact. The authors make it clear from the beginning that the book is intended to be  concise, and in a lot of ways, that is refreshing. I would rather deal with a book that is less than 250 pages than one that is over a thousand.<br>
+                    It is clear that the authors have a background in mathematics. At times the presentation of the concepts can be confusing, but I would place that as a deficiency on my part.<br>
+                    Overall, I'm very glad to have read this!</p>
+            </div>
+        </div><br>
 
-                        <p class='body', style='color: yellow;'>1. Interactive Shells</p>
-                            <p class='body'>I need to use pandas at work quite a bit, and doing so in the interactive shell has made my life a lot easier. It was very interesting working with a language that needed to be compiled after each change in order to run.<br></p>
+        <!-- SICP -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/sicp.jpg' class='composer_portraits'><br>
+                <progress max='100' value='100'></progress><br/>
 
-                        <p class='body', style='color: yellow;'>2. Extensive Documentation</p>
-                            <p class='body'>Python and its popular libraries are documented very thoroughly. Other tools I use frequently like zsh and neovim are also very well documented. I was surprised by how C is maintained, and honestly I still don't understand how to find proper documentation. I found <a href='https://en.cppreference.com/index.html' class='links'>this website</a>, but it doesn't seem to be official. Seeing that I have only been in the C ecosystem for a few weeks, I realize that this answer is ignorant, but I guess that is kind of the point. I was simply surprised to see the lack of a unified documentation.<br>
-                            With this being said, there are things I enjoy about C; just as I had taken some things for granted using Python, I also learned what I was <i>missing out on</i> by using Python.<br></p>
+            </div>
+            <div>
+                <p class='body'>This book is a monolith in computer science literature. It is clear that I will not derive everything of value in one pass alone; I foresee this book being one that I revisit time and time again throughout my life and career.<br><br>The authors have backgrounds in mathematics, and it shows in their presentation of material. While at times I would have preferred more practical explanations, the presentation style was a constant reminder of how mathematics in many ways built the field of computer science. Also, there is a heavy focus on the functional programming paradigm in the book. Their way of presenting functional programming and their way of showing how recursion is a hallmark <i>of</i> functional programming was very interesting.</p>
+            </div>
+        </div><br>
 
-                        <p class='body', style='color: yellow;'>1. Small Language</p>
-                            <p class='body'>It is amazing to see how great a small language can be, and makes me wonder if some other languages, like Python, aren't loaded down with unnecessary fluff.<br></p>
+        <!-- Code book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/codebook.jpg' class='composer_portraits'><br>
+                <progress max='100' value='100'></progress><br/>
+            </div>
 
-                        <p class='body', style='color: yellow;'>2. Static Typing</p>
-                            <p class='body'>I like the straightforward and explicit mannerisms that come with a statically typed language.</p>
+            <div>
+                <p class='body'>An excellent introduction to cryptography and its history. Great discussion about the people, events, and ciphers that have shaped cryptography, especially in the 20th century. It is very interesting to think about how both cryptography and computers in general developed during WWII. Quite literally, the first programmable computer (<a href='https://en.wikipedia.org/wiki/Colossus_computer' class='links'>Colossus Machine</a>) was directly designed in efforts to decipher the Lorenz ciper of Nazi Germany. This was an all-around enjoyable read.</i></p>
+            </div>
+        </div><br>
 
-                        <p class='body', style='color: yellow;'>3. Memory Management</p>
-                        <p class='body'>I spent most of my time messing around with memory allocation and pointers while learning C. It was so much fun, and I couldn't believe that such intimacy with hardware was actually <i>impossible</i> in Python.<br>
-                        Concerning the structure and readability of the book itself, I think it is well understood that the material reads more like a reference manual than a book. I don't mean this in a negative way, it's just fact. The authors make it clear from the beginning that the book is intended to be  concise, and in a lot of ways, that is refreshing. I would rather deal with a book that is less than 250 pages than one that is over a thousand.<br>
-                        It is clear that the authors have a background in mathematics. At times the presentation of the concepts can be confusing, but I would place that as a deficiency on my part.<br>
-                        Overall, I'm very glad to have read this!</p>
-                </div>
-            </div><br>
+        <!-- Security book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/sec.jpg' class='composer_portraits'><br>
+                <progress max='100' value='0'></progress><br/>
+            </div>
 
-            <!-- SICP -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/sicp.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='100'></progress><br/>
+            <div>
+                <p class='body'></p>
+            </div>
+        </div><br>
 
-                </div>
-                <div>
-                    <p class='body'>This book is a monolith in computer science literature. It is clear that I will not derive everything of value in one pass alone; I foresee this book being one that I revisit time and time again throughout my life and career.<br><br>The authors have backgrounds in mathematics, and it shows in their presentation of material. While at times I would have preferred more practical explanations, the presentation style was a constant reminder of how mathematics in many ways built the field of computer science. Also, there is a heavy focus on the functional programming paradigm in the book. Their way of presenting functional programming and their way of showing how recursion is a hallmark <i>of</i> functional programming was very interesting.</p>
-                </div>
-            </div><br>
+        <h1 class='header' style='text-align: left;'>Bonus Books:</h1>
 
-            <!-- Code book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/codebook.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='100'></progress><br/>
+        <!-- OSTEP book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/ostep.jpg' class='composer_portraits'><br>
+                <progress max='100' value='0'></progress><br/>
+            </div>
 
-                </div>
+            <div>
+                <p class='body'></p>
+            </div>
 
-                <div>
-                    <p class='body'>An excellent introduction to cryptography and its history. Great discussion about the people, events, and ciphers that have shaped cryptography, especially in the 20th century. It is very interesting to think about how both cryptography and computers in general developed during WWII. Quite literally, the first programmable computer (<a href='https://en.wikipedia.org/wiki/Colossus_computer'>Colossus Machine</a>) was directly designed in efforts to decipher the Lorenz ciper of Nazi Germany. This was an all-around enjoyable read.</i></p>
-                </div>
-            </div><br>
+        </div><br>
 
-            <!-- Security book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/sec.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='0'></progress><br/>
+        <!-- Stats book -->
+        <div class='container'>
+            <div>
+                <img src='assets/photos/books/stats.jpg' class='composer_portraits'><br>
+                <progress max='100' value='0'></progress><br/>
 
-                </div>
+            </div>
 
-                <div>
-                    <p class='body'></p>
-                </div>
-            </div><br>
+            <div>
+                <p class='body'></p>
+            </div>
+        </div><br>
 
-            <h1 class='header' style='text-align: left;'>Bonus Books:</h1>
+        <!--shows how many people have visited the site-->
+        <div style='text-align: left;'>
+            <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script>
+        </div> 
 
-            <!-- OSTEP book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/ostep.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='0'></progress><br/>
-                </div>
-
-                <div>
-                    <p class='body'></p>
-                </div>
-
-            </div><br>
-
-            <!-- Stats book -->
-            <div class='container'>
-                <div>
-                    <img src='photos/books/stats.jpg' class='composer_portraits'><br>
-                    <progress max='100' value='0'></progress><br/>
-
-                </div>
-
-                <div>
-                    <p class='body'></p>
-                </div>
-            </div><br>
-
-            <!--shows how many people have visited the site-->
-            <div style='text-align: left;'>
-                <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br><a href='https://www.versicherungen.at/zahnversicherung/'>Zahn-Versicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=91a36cbccc442318da033dfc1445c14d17b48e11'></script>
-            </div> 
-
-        </main>
-    </body>
+</main>
+</body>
 </html>

@@ -17,6 +17,29 @@
     display: flex;           /* Activates flexbox layout */
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+.tables-container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+
+}
+
+/* table */
+.table {
+    margin: 0 auto;
+    table-layout: fixed;
+    padding: 4px;
+    border: 1px solid white;
+    color: white;
+}
+.table th, .table td {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
 }
 
 .text_content {
