@@ -4,6 +4,7 @@
   flex-direction: row;
   gap: 40px;               /* Creates space between image and text */
   padding: 20px;
+  margin: 20px;
 }
 
 .col_container {
@@ -49,7 +50,7 @@
 }
 
 #banner {
-    background-image: url('photos/snow_lake.jpg');
+    background-image: url('assets/photos/snow_lake.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat; /*fills, no fracturing*/
 }
