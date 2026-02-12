@@ -7,6 +7,16 @@
   margin: 20px;
 }
 
+.container2 {
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: rgb(54, 69, 79);
+  border: 1px solid rgb(231, 232, 237);
+}
+
+
 .col_container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: column;
@@ -67,6 +77,7 @@
     text-align: left;
     color: white;
     font-size: 18px;
+    padding: 10px;
 }
 
 .links {
