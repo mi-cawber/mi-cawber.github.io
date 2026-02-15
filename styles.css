@@ -1,4 +1,40 @@
-/* containers stuff */
+/* main classes */
+.header {
+    text-align: center;
+    font-size: 40px;
+    color:white;
+}
+ 
+.body {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.links {
+    /*magenta*/
+    /*color:rgb(205, 86, 223);*/
+
+    /*green*/
+    /*color: rgb(60, 179, 113);*/
+    
+    /*reddish (lol)*/
+    /*color: rgb(255, 0, 122);*/
+    
+    /*dark cyan*/
+    /*color: rgb(0,139,139);*/
+
+    /**/
+    color: rgb(0,191,255);
+}
+
+.photo {
+    width: 400px;
+    height: 500px;
+}
+
+/* containers */
 .container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: row;
@@ -16,7 +52,6 @@
   border: 1px solid rgb(231, 232, 237);
 }
 
-
 .col_container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: column;
@@ -31,73 +66,13 @@
     gap: 20px;
 }
 
-.tables-container {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-
-}
-
-/* table */
-.table {
-    margin: 0 auto;
-    table-layout: fixed;
-    padding: 4px;
-    border: 1px solid white;
-    color: white;
-}
-.table th, .table td {
-    padding: 4px;
-    text-align: center;
-    border: 1px solid white;
-    color: white;
-}
-
-.text_content {
-    max-width: 960px; /* Or any other desired maximum width in pixels, em, or rem */
-    padding: 20px; /* Optional: adds some padding around the content */
-    flex: 1;                 /* Makes text area fill remaining space */
-}
-
-#banner {
+.banner {
     background-image: url('assets/photos/snow_lake.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat; /*fills, no fracturing*/
 }
 
-
-/* main classes */
-.header {
-    text-align: center;
-    font-size: 40px;
-    color:white;
-}
- 
-.body {
-    text-align: left;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.links {
-
-    /*magenta*/
-    /*color:rgb(205, 86, 223);*/
-
-    /*green*/
-    /*color: rgb(60, 179, 113);*/
-    
-    /*reddish (lol)*/
-    /*color: rgb(255, 0, 122);*/
-    
-    /*dark cyan*/
-    /*color: rgb(0,139,139);*/
-
-    /**/
-    color: rgb(0,191,255);
-}
-
+/* used for pages that have photo has header/banner */
 .photo_headers {
     width: 750px;
     height: 453px;
@@ -106,26 +81,6 @@
     margin-right: auto;
 }
 
-/*for music.html*/
-.composer_portraits {
-    width: 202px;
-    height: 249px;
-}
-
-/*for books.html*/
-.book_cover {
-    width: 400x;
-    height:  500px;
-}
-
-#output {
-    text-align: left;
-    color: white;
-    font-size: 18px;
-    line-height: 40px; /*adds what appears as double spacing between lines*/
-    margin: 20px;
-
-}
 .quotations {
     font-family: Georgia;
     text-align: left;
@@ -133,9 +88,7 @@
     margin: 20px;
 }
 
-
-/* For study.html */
-
+/* for study.html */
 /*
 Source - https://stackoverflow.com/a/33964257
 Posted by Josh Crozier
