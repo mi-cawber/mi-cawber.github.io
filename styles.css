@@ -68,6 +68,17 @@
     gap: 20px;
 }
 
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:DarkBlue;
+  width: 20%;
+  max-width: 800px;
+  min-width: 300px;
+  min-height: 453px;
+}
+
 .banner {
     background-image: url('assets/photos/snow_lake.jpg');
     background-size: 100% 100%;
