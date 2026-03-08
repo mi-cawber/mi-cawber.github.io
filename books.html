@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = 'en'>
 <head>
-    <title>micaeber's books</title>
+    <title>Books</title>
     <link rel='stylesheet' href='styles.css'>
     <style>
         /* Add some basic table styling */
@@ -20,6 +20,9 @@
             
         }
     </style>
+
+    <!-- for quotations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
 </head>
 
 <body class='background'>
@@ -28,14 +31,28 @@
     <a href='index.html' class='links' style='font-size: 30px;'>&lt;&lt; Home</a>
 
     <h1 class='header'>Books</h1>
-        <center><img src="assets/photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px"></center>
-        <p class='body' style="text-align: center;"><i>Literature--that which embodies the elusive element which defines mankind.</i></p>
 
-        <p class='body'>See my <a href='quotations.html' class='links'>other page</a> showing a list of my favorite passages from the books I've read.
-        </p>
+    <div class='container'>
+        <div class='directory'>
+            <p class='header' style='text-align=left'>Page Directory
+            <p class='body'>
+                1. <a href='#favorites' class='links'>Favorite Books</a><br>
+                2. <a href='#list' class='links'>Books I've Read</a><br>
+                3. <a href='#quotes' class='links'>Quotes</a><br>
+            </p>
+        </div>
+
+        <div>
+        <img src="assets/photos/sitting_reader.jpg" alt="guy reading a book under a tree" style="width: 750px; height: 453px">
+        </div>
+    </div>
+
+    <p class='body' style='text-align: center'>“I cannot remember the books I've read any more than the meals I have eaten; even so, they have made me.” ― Ralph Waldo Emerson</p>
+
 
     <!-- Favorite books -->
-    <p class='header' style="text-align: left;">Here are some of my favorite books:</h2>
+    <section id='favorites'>
+    <p class='header' style="text-align: left;">Some of my favorite books:</h2>
 
         <!-- David Copperfield -->
         <div class='container' style='border-bottom: 3px solid white'>
@@ -107,12 +124,12 @@
             <p class='body'>Also a life-changing book. It's a bit of long one. :]</p>
             </div>
         </div>
+    </section>
 
 
     <!-- Books Table -->
-    <h3 class='header' style='text-align: left;'>I have kept track of many of the books I have read,
-        here are 136 of them
-    </h3>
+    <section id='list'>
+    <p class='header' style='text-align: left;'>I have kept track of many of the books I have read:</p>
         <!-- Add this div to hold your table -->
         <div id="tableContainer"></div>
         <!--This JavaScript loads the csv and makes a table from it-->
@@ -148,5 +165,39 @@
                     });
             };
         </script>
+    </section>
+
+    <section='quotes'>
+    <p class='header'>My favorite passages from the books I've read:</p>
+    <div class='container'>
+    <!-- This div will contain converted document -->
+    <div id='output' class='body'>Loading document...</div>
+    <script>
+        // URL to word doc
+        var docxUrl = 'assets/documents/quotations.docx';
+        
+        // Get the output div where we'll display the document
+        var outputDiv = document.getElementById('output');
+        
+        // Fetch the document from the URL
+        fetch(docxUrl)
+            .then(function(response) {
+                return response.arrayBuffer();
+            })
+            .then(function(arrayBuffer) {
+                // Convert the document to HTML
+                return mammoth.convertToHtml({arrayBuffer: arrayBuffer});
+            })
+            .then(function(result) {
+                // Display the HTML
+                outputDiv.innerHTML = result.value;
+            })
+            .catch(function(error) {
+                // Show any errors
+                outputDiv.innerHTML = 'Error loading document: ' + error.message;
+            });
+    </script>
+    </div>
+    </section>
 </body>
 </html>
