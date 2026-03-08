@@ -11,6 +11,9 @@
     font-size: 18px;
     padding: 10px;
 }
+.background{
+    background-color: black;
+}
 
 .links {
     /*magenta*/
@@ -41,6 +44,7 @@
   gap: 40px;               /* Creates space between image and text */
   padding: 20px;
   margin: 20px;
+  align-items: center;
 }
 
 .container2 {
